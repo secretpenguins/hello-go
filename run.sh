@@ -1,5 +1,5 @@
 #!/bin/bash
-wd="/var/wwww"
+wd="/var/www"
 export GOPATH=$wd
 export GO_ENV=production
 export PORT=80
