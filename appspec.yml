@@ -1,8 +1,17 @@
 version: 0.0
 os: linux
-hooks:
-  BeforeInstall:
-    - location: packages.sh
+files:
+  - source: /
+    destination: /var/www
+permissions:
+  - object: /var/www
+    pattern: "*"
+    mode: 777 #Yeah, I know I shouldn't do this. 
+hooks: 
+  AfterInstall: 
+    - location: /var/www/packages.sh
+      runas: root
   ApplicationStart:
-    - location: run.sh
+    - location: /var/www/run.sh
+      runas: root
       timeout: 3600

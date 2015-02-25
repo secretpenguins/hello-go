@@ -1,5 +1,8 @@
 #!/bin/bash
-export GOPATH=$(pwd)
+wd="/var/wwww"
+export GOPATH=$wd
+export GO_ENV=production
+export PORT=80
 
-go build hello.go
-./hello.go &
+go build $wd/hello.go
+$wd/hello.go &
