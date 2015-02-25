@@ -31,7 +31,7 @@ func Setup() {
 	globalDb = db
 	dbMap = &gorp.DbMap{Db: db, Dialect: gorp.MySQLDialect{"InnoDB", "UTF8"}}
 
-	dbMap.AddTableWithName(Post{}, "Posts").SetKeys(true, "postId")
+	dbMap.AddTableWithName(Post{}, "Posts").SetKeys(true, "PostId")
 	dbMap.AddTableWithName(Login{}, "Logins").SetKeys(true, "LoginId")
 
 	mc = memcache.New(config.MemcachePath)

@@ -9,9 +9,9 @@ permissions:
     mode: 777 #Yeah, I know I shouldn't do this. 
 hooks: 
   AfterInstall: 
-    - location: packages.sh
+    - location: scripts/install.sh
       runas: root
   ApplicationStart:
-    - location: run.sh
+    - location: scripts/run.sh
       runas: root
       timeout: 3600
