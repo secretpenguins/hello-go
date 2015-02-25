@@ -4,5 +4,5 @@ export GOPATH=$wd
 export GO_ENV=production
 export PORT=80
 
-go build $wd/hello.go $wd/hello
+go build -o $wd/hello $wd/hello.go
 (cd $wd; exec $wd/hello >> log.txt 2>&1 &)
