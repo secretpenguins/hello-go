@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo yum install golang
+yum install golang
 export GOPATH=$(pwd)
 
 go get github.com/bradfitz/gomemcache/memcache
