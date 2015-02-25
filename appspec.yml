@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 hooks:
   BeforeInstall:
-    - location: packages.h
+    - location: packages.sh
   ApplicationStart:
     - location: run.sh
       timeout: 3600
