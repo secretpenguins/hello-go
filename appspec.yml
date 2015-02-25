@@ -3,5 +3,5 @@ hooks:
   BeforeInstall:
     - location: packages.h
   ApplicationStart:
-    - location: deploy.sh
+    - location: run.sh
       timeout: 3600

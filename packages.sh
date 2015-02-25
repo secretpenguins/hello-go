@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo yum install golang
+export GOPATH=$(pwd)
 
 go get github.com/bradfitz/gomemcache/memcache
 go get github.com/martini-contrib/sessions
