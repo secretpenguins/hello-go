@@ -1,0 +1,7 @@
+hello.exe
+*.txt
+bin/*
+pkg/*
+src/golang.org/*
+src/github.com/*
+hello

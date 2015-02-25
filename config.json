@@ -1,0 +1,18 @@
+{
+	"Development" : {
+		"DbHost" : "127.0.0.1",
+		"DbPort" : "3306",
+		"DbDatabase" : "blog",
+		"DbUser" : "go2",
+		"DbPassword" : "password",
+		"MemcachePath" : "127.0.0.1:11211"
+	}, 
+	"Production" : {
+		"DbHost" : "tjsagedb.cukyjxxoycpk.us-east-1.rds.amazonaws.com",
+		"DbPort" : "3306",
+		"DbDatabase" : "blog",
+		"DbUser" : "root",
+		"DbPassword" : "ZDwUDCbC",
+		"MemcachePath" : "172.31.44.249:11211"
+	}
+}

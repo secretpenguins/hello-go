@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="panel-title">
+			New Post
+		</div>
+	</div>
+	<div class="panel-body">
+		<form action="/" method="POST">
+			<div class="row form-group">
+				<div class="col-md-3">Title</div>
+				<div class="col-md-9"><input type="text" name="Title" class="form-control" data-validate="required" /></div>
+			</div>
+			<div class="row form-group">
+				<div class="col-md-3">Content</div>
+				<div class="col-md-9"><textarea name="Content" rows="20" cols="80" class="form-control" data-validate="required	">{{ .Content }}</textarea></div>
+			</div>
+			<div class="row form-group">
+				<div class="col-md-12">	<input type="submit" value="Save" class="btn btn-primary" /></div>
+			</div>
+		</form>
+	</div>
+</div>

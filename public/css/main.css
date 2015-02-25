@@ -1,0 +1,16 @@
+.container {
+	padding-top: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+i {
+	padding-left: 8px;
+}
+
+.center {
+	margin: 0 auto;
+	max-width: 300px;
+}

@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="panel-title">
+			Editing {{ .Title }}
+		</div>
+	</div>
+	<div class="panel-body">
+		<form action="/save" method="POST">
+			<input type="hidden" name="PostId" value="{{ .PostId }}" />
+			<div class="row form-group">
+				<div class="col-md-3">Title</div>
+				<div class="col-md-9"><input type="text" name="Title" class="form-control" value="{{ .Title }}" /></div>
+			</div>
+			<div class="row form-group">
+				<div class="col-md-3">Content</div>
+				<div class="col-md-9"><textarea name="Content" rows="20" cols="80" 
+					class="form-control">{{ .Content }}</textarea></div>
+			</div>
+			<div class="row form-group">
+				<div class="col-md-12">	<input type="submit" value="Save" class="btn btn-primary" /></div>
+			</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="panel-title">
+			Posts
+		</div>
+	</div>
+	<div clas="panel-body">
+		<table class="table">
+			{{ range . }}
+				<tr>
+					<td><a href="/{{ .PostId }}"> {{ .Title }}</a></td>
+				</tr>
+			
+			{{ end }}
+		</table>
+	</div>
+</div>

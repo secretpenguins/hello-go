@@ -1,0 +1,7 @@
+os: linux
+hooks:
+  BeforeInstall:
+    - location: packages.h
+  ApplicationStart:
+    - location: deploy.sh
+      timeout: 3600

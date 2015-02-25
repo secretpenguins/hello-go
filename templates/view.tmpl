@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="panel-title">
+			<div class="pull-left">{{ .Title }}</div>
+			<div class="pull-right">
+				<a href="/{{ .PostId }}/edit"><i class="fa fa-pencil"></i></a>
+				<a href="/{{ .PostId }}/delete"><i class="fa fa-trash-o"></i></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="panel-body">
+		{{ .Content }}
+	</div>
+</div>
