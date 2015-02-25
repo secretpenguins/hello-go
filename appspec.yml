@@ -9,9 +9,9 @@ permissions:
     mode: 777 #Yeah, I know I shouldn't do this. 
 hooks: 
   AfterInstall: 
-    - location: /var/www/packages.sh
+    - location: packages.sh
       runas: root
   ApplicationStart:
-    - location: /var/www/run.sh
+    - location: run.sh
       runas: root
       timeout: 3600
