@@ -5,4 +5,4 @@ export GO_ENV=production
 export PORT=80
 
 go build $wd/hello.go $wd/hello
-exec $wd/hello >> log.txt 2>&1 &
+(cd $wd; exec $wd/hello >> log.txt 2>&1 &)
