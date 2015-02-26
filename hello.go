@@ -54,10 +54,10 @@ func main() {
 
     m.Get("/login", func(r render.Render, session sessions.Session) {
     	var login = &data.Login{}
-    	options := &render.HTMLOptions {
+    	options := render.HTMLOptions {
 	    	Layout: "simple",
 	    }
-    	r.HTML(200, "login", login, *options)
+    	r.HTML(200, "login", login, options)
 	})
 
 	m.Post("/login", binding.Bind(data.Login{}), func(l data.Login, r render.Render, s sessions.Session) {
@@ -73,7 +73,9 @@ func main() {
 	    	}
 	    }
 	    
-   		r.HTML(200, "login", l)
+   		r.HTML(200, "login", l, render.HTMLOptions {
+   			Layout: "simple",
+		})
 	})
 
 	m.Get("/test", func(r render.Render) {

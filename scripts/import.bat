@@ -1,4 +1,3 @@
-#!/bin/bash
 go get github.com/bradfitz/gomemcache/memcache
 go get github.com/martini-contrib/sessions
 go get github.com/go-sql-driver/mysql
